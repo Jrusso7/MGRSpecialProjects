@@ -24,64 +24,67 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo Styling */
-.navbar-brand img {
-    height: 80px; /* Increased height for a more prominent logo */
-    max-height: 100%; /* Ensures it scales well */
-}
-
-/* Navigation Bar Styles */
-.navbar-container {
-    display: flex;
-    justify-content: center; /* Center-aligns the navigation links */
-    align-items: center;
-    padding: 1rem 2rem;
-    position: relative; /* Keeps the logo and links aligned properly */
-}
-
 .logo {
     position: absolute;
     left: 20px; /* Keeps logo on the left */
 }
 
-/* Navigation Links */
-nav .nav-links {
+/* Navigation Bar Section */
+
+/* Logo Styling */
+.navbar-brand img {
+    height: 80px; /* Prominent logo size */
+    max-height: 100%;
+}
+
+/* Navigation Bar Links */
+.navbar-nav {
     display: flex;
     list-style: none;
     gap: 2rem; /* Space between links */
     margin: 0;
     padding: 0;
+    justify-content: center; /* Ensures links are centered */
 }
 
-nav .nav-links li a {
+.navbar-nav .nav-link {
     position: relative;
     text-decoration: none;
-    color: black; /* Default color for links */
-    font-size: 1.2rem; /* Larger and more modern font size */
+    color: #333; /* Default color for links */
+    font-size: 1.2rem; /* Modern, larger font size */
     font-weight: bold;
-    letter-spacing: 1px; /* Spaced-out text for modern look */
+    letter-spacing: 0.5px; /* Adds spacing for a modern feel */
     padding: 0.5rem;
-    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
 }
 
 /* Underline Animation for Hover */
-nav .nav-links li a::after {
+.navbar-nav .nav-link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px; /* Position the underline below the text */
-    width: 0;
-    height: 2px;
-    background-color: #007BFF; /* Underline color */
-    transition: width 0.4s ease-in-out; /* Smooth expansion */
+    bottom: -5px; /* Distance below the text */
+    width: 0; /* Start with no underline */
+    height: 2px; /* Thickness of the underline */
+    background-color: #007BFF; /* Bright blue underline */
+    transition: width 0.4s ease-in-out; /* Smooth animation */
 }
 
-nav .nav-links li a:hover {
+.navbar-nav .nav-link:hover {
     color: #007BFF; /* Change text color on hover */
 }
 
-nav .nav-links li a:hover::after {
+.navbar-nav .nav-link:hover::after {
     width: 100%; /* Expand underline to full width */
+}
+
+/* Adjust Navbar Container for Proper Layout */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
 }
 
 /* Hero Section */
