@@ -24,21 +24,24 @@ header {
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center-aligns the entire nav bar */
     align-items: center;
     padding: 1rem 2rem;
+    position: relative; /* Allows logo and links to coexist */
 }
 
-.logo img {
-    height: 50px;
+.logo {
+    position: absolute;
+    left: 20px; /* Keep logo on the left */
 }
 
 nav .nav-links {
-    list-style: none;
     display: flex;
-    gap: 2rem;
+    list-style: none;
+    gap: 2rem; /* Space between links */
     margin: 0;
     padding: 0;
+    justify-content: center; /* Ensures links are centered */
 }
 
 nav .nav-links li a {
