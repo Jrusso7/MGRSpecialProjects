@@ -31,10 +31,31 @@ header {
 
 /* All Navigation Bar CSS */
 
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Vertically centers logo and text */
+    text-decoration: none; /* Remove underline from the brand name */
+}
+
+.company-name {
+    font-size: 1.5rem; /* Adjust font size to fit well with the logo */
+    font-weight: bold;
+    color: #333; /* Match the navigation bar text color */
+    white-space: nowrap; /* Prevent wrapping of the text */
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 1.2rem; /* Slightly smaller font on smaller screens */
+    }
+}
+
 /* Logo Styling */
 .navbar-brand img {
-    height: 80px; /* Prominent logo size */
-    max-height: 100%;
+    height: auto; /* Automatically adjust height based on width for responsiveness */
+    max-height: 50px; /* Matches the explicit height from the HTML */
+    margin-right: 10px; /* Adds space between the logo and the company name */
+    vertical-align: middle; /* Ensures alignment with the text */
 }
 
 /* Navigation Bar Links */
