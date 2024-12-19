@@ -24,11 +24,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
-    position: absolute;
-    left: 20px; /* Keeps logo on the left */
-}
-
 /* All Navigation Bar CSS */
 
 .navbar-brand {
