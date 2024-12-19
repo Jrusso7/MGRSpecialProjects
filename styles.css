@@ -14,43 +14,49 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-    color: white;
+    background-color: white; /* White background for the nav bar */
+    color: black; /* Default text color for nav links */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for contrast */
 }
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center-align the navigation bar */
     align-items: center;
     padding: 1rem 2rem;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    position: absolute;
+    left: 20px; /* Keep logo on the left for branding */
 }
 
 nav .nav-links {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem; /* Space out the links evenly */
+    margin: 0;
+    padding: 0;
 }
 
 nav .nav-links li a {
     text-decoration: none;
-    color: white;
+    color: black; /* Default text color */
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1rem;
+    transition: all 0.3s; /* Smooth transition for hover effect */
+    padding: 0.5rem; /* Add padding for better click area */
 }
 
 nav .nav-links li a:hover {
-    color: #f4a261;
+    text-decoration: underline; /* Add underline on hover */
+    color: #007BFF; /* Brighter text color on hover (adjust as needed) */
 }
+
 
 /* Hero Section */
 .hero {
