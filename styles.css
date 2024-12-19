@@ -12,51 +12,48 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
 header {
-    background-color: white; /* White background for the nav bar */
-    color: black; /* Default text color for nav links */
+    background-color: white;
+    border-bottom: 1px solid #ddd;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-container {
     display: flex;
-    justify-content: center; /* Center-align the navigation bar */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
 }
 
-.logo {
-    position: absolute;
-    left: 20px; /* Keep logo on the left for branding */
+.logo img {
+    height: 50px;
 }
 
 nav .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem; /* Space out the links evenly */
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
 
 nav .nav-links li a {
     text-decoration: none;
-    color: black; /* Default text color */
+    color: black;
     font-weight: bold;
     font-size: 1rem;
-    transition: all 0.3s; /* Smooth transition for hover effect */
-    padding: 0.5rem; /* Add padding for better click area */
+    transition: all 0.3s ease;
+    padding: 0.5rem;
 }
 
 nav .nav-links li a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: #007BFF; /* Brighter text color on hover (adjust as needed) */
+    text-decoration: underline;
+    color: #007BFF;
 }
-
 
 /* Hero Section */
 .hero {
