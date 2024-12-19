@@ -106,6 +106,27 @@ header {
 
 /* End of Navigation Bar CSS */
 
+/* Team Images */
+.team-img {
+    width: 200px; /* Consistent width */
+    height: 200px; /* Consistent height */
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #007BFF; /* Optional: Add a border for a polished look */
+}
+
+/* Team Section Text */
+h3 {
+    font-size: 1.5rem; /* Larger, prominent font for names */
+    font-weight: bold;
+}
+
+p.text-muted {
+    font-size: 1rem; /* Slightly smaller font for titles */
+    color: #6c757d; /* Muted gray for distinction */
+    margin-top: 0.5rem;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh; /* Full screen height */
