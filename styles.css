@@ -13,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header Styles */
 header {
     background-color: white;
     border-bottom: 1px solid #ddd;
@@ -23,40 +24,64 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Logo Styling */
+.navbar-brand img {
+    height: 80px; /* Increased height for a more prominent logo */
+    max-height: 100%; /* Ensures it scales well */
+}
+
+/* Navigation Bar Styles */
 .navbar-container {
     display: flex;
-    justify-content: center; /* Center-aligns the entire nav bar */
+    justify-content: center; /* Center-aligns the navigation links */
     align-items: center;
     padding: 1rem 2rem;
-    position: relative; /* Allows logo and links to coexist */
+    position: relative; /* Keeps the logo and links aligned properly */
 }
 
 .logo {
     position: absolute;
-    left: 20px; /* Keep logo on the left */
+    left: 20px; /* Keeps logo on the left */
 }
 
+/* Navigation Links */
 nav .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem; /* Space between links */
     margin: 0;
     padding: 0;
-    justify-content: center; /* Ensures links are centered */
 }
 
 nav .nav-links li a {
+    position: relative;
     text-decoration: none;
-    color: black;
+    color: black; /* Default color for links */
+    font-size: 1.2rem; /* Larger and more modern font size */
     font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    letter-spacing: 1px; /* Spaced-out text for modern look */
     padding: 0.5rem;
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Underline Animation for Hover */
+nav .nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position the underline below the text */
+    width: 0;
+    height: 2px;
+    background-color: #007BFF; /* Underline color */
+    transition: width 0.4s ease-in-out; /* Smooth expansion */
 }
 
 nav .nav-links li a:hover {
-    text-decoration: underline;
-    color: #007BFF;
+    color: #007BFF; /* Change text color on hover */
+}
+
+nav .nav-links li a:hover::after {
+    width: 100%; /* Expand underline to full width */
 }
 
 /* Hero Section */
