@@ -58,7 +58,7 @@ nav .nav-links li a:hover {
 /* Hero Section */
 .hero {
     height: 100vh; /* Full screen height */
-    background-image: url('images/herobackground.jpg'); /* Use your placeholder image */
+    background-image: url('images/desk.jpg'); /* Use your placeholder image */
     background-size: cover;
     background-position: center;
     display: flex;
