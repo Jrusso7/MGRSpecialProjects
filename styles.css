@@ -33,15 +33,19 @@ header, .navbar {
 
 /* Mobile View */
 @media (max-width: 768px) {
+    .navbar {
+        height: 80px; /* Explicitly set navbar height */
+    }
+    
     .navbar-collapse {
-        position: fixed; /* Keeps dropdown in view when scrolling */
-        top: 0; /* Matches the navbar height */
-        width: 100%; /* Full width for mobile view */
-        z-index: 999; /* Ensure it stays above page content */
+        position: fixed; /* Keeps dropdown in place during scroll */
+        top: 80px; /* Positions dropdown just below the navbar */
+        width: 100%; /* Full width for mobile */
+        z-index: 999; /* Ensures it stays above content */
         background-color: white; /* Matches navbar background */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
         height: auto; /* Prevents clipping of dropdown content */
-        overflow-y: auto; /* Adds scrolling if content overflows */
+        overflow-y: auto; /* Allows scrolling if content exceeds screen height */
     }
 
     .navbar-nav {
@@ -58,6 +62,7 @@ header, .navbar {
         position: absolute;
         right: 1rem;
         top: 1rem;
+        z-index: 1001; /* Ensure toggle icon stays above the dropdown */
     }
 }
 
