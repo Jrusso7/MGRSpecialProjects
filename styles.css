@@ -17,14 +17,19 @@ body {
 header, .navbar {
     background-color: white;
     border-bottom: 1px solid #ddd;
-    position: fixed; /* Sticky navbar for all views */
+    position: sticky; /* Ensures it sticks during scroll */
     top: 0;
-    width: 100%; /* Full-width coverage */
-    z-index: 1000; /* Stays above other content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar Collapse (Mobile-Specific Styles) */
+/* Global Defaults (Applies to all screens) */
+.navbar-collapse {
+    transition: all 0.3s ease; /* Smooth transitions if any */
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
     .navbar-collapse {
         position: fixed; /* Keeps dropdown in view when scrolling */
@@ -53,19 +58,18 @@ header, .navbar {
     }
 }
 
-/* Navbar Collapse (Desktop-Specific Styles) */
+/* Desktop View */
 @media (min-width: 769px) {
     .navbar-collapse {
-        position: relative; /* Normal behavior for desktop */
-        display: flex !important; /* Ensures links are displayed inline */
-        justify-content: flex-end; /* Align links to the right */
+        position: static; /* Default behavior for desktop */
         box-shadow: none; /* No shadow for desktop */
         background-color: transparent; /* Transparent or default background */
-        width: auto; /* Use content width instead of 100% */
+        width: auto; /* Reset to auto width */
     }
 
     .navbar-nav {
         flex-direction: row; /* Align links horizontally */
+        justify-content: flex-end; /* Push links to the right */
     }
 
     .navbar-nav .nav-item {
@@ -167,24 +171,6 @@ header, .navbar {
     width: 100%; /* Fully underline active link */
     height: 2px;
     background-color: #007BFF; /* Same underline color */
-}
-
-/* Ensure Mobile Dropdown Menu Stays Below Navbar */
-.navbar-collapse {
-    position: fixed; /* Keeps the dropdown visible during scrolling */
-    top: 80px; /* Matches the navbar height */
-    width: 100%; /* Ensures the dropdown spans the full screen width */
-    background-color: white; /* Matches the navbar background */
-    z-index: 999; /* Stays above the content but below the main navbar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-}
-
-/* Optional: Responsive Adjustment */
-@media (max-width: 768px) {
-    .navbar-collapse {
-        height: auto; /* Prevents clipping of dropdown content */
-        overflow-y: auto; /* Adds scrolling if the dropdown exceeds screen height */
-    }
 }
 
 /* End of Navigation Bar CSS */
