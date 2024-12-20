@@ -7,21 +7,30 @@
 
 body {
     font-family: Arial, sans-serif;
-    padding-top: 0px; /* Matches the approximate height of the header */
+    padding-top: 80px; /* Matches the height of the navbar */
     color: #333;
     background-color: #f9f9f9;
     line-height: 1.6;
 }
 
-/* Header Styles */
-header {
+/* Header and Navbar Styles */
+header, .navbar {
     background-color: white;
     border-bottom: 1px solid #ddd;
-    position: fixed;
+    position: fixed; /* Sticks the navbar at the top */
     top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensures full-width coverage */
+    z-index: 1000; /* Keeps it above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto; /* Adjusts height for mobile view */
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Slightly smaller font size for links */
+    }
 }
 
 /* All Navigation Bar CSS */
