@@ -34,7 +34,7 @@ header, .navbar {
 /* Mobile View */
 @media (max-width: 768px) {
     .navbar {
-        height: 80px; /* Explicitly set navbar height */
+        height: 0; /* Explicitly set navbar height */
     }
     
     .navbar-collapse {
