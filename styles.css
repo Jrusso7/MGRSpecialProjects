@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    padding-top: 80px; /* Matches the height of the navbar */
+    padding-top: 0; /* Matches the height of the navbar */
     color: #333;
     background-color: #f9f9f9;
     line-height: 1.6;
@@ -15,6 +15,8 @@ body {
 
 /* General Navigation Bar Styles */
 header, .navbar {
+    margin: 0; /*Added to fix space above navbar*/
+    padding: 0; /*Added to fix space above navbar*/
     background-color: white;
     border-bottom: 1px solid #ddd;
     position: sticky; /* Ensures it sticks during scroll */
@@ -33,7 +35,7 @@ header, .navbar {
 @media (max-width: 768px) {
     .navbar-collapse {
         position: fixed; /* Keeps dropdown in view when scrolling */
-        top: 80px; /* Matches the navbar height */
+        top: 0; /* Matches the navbar height */
         width: 100%; /* Full width for mobile view */
         z-index: 999; /* Ensure it stays above page content */
         background-color: white; /* Matches navbar background */
