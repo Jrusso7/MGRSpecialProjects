@@ -44,7 +44,6 @@ header, .navbar {
         z-index: 999; /* Ensures it stays above content */
         background-color: white; /* Matches navbar background */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-        height: auto; /* Prevents clipping of dropdown content */
         overflow-y: auto; /* Allows scrolling if content exceeds screen height */
     }
 
