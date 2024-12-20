@@ -27,22 +27,49 @@ header, .navbar {
 /* Navbar Collapse (Mobile-Specific Styles) */
 @media (max-width: 768px) {
     .navbar-collapse {
-        position: fixed; /* Ensures the dropdown menu stays in place */
-        top: 80px; /* Aligns with navbar height */
-        width: 100%; /* Full width for mobile */
-        z-index: 999; /* Stays above content */
-        background-color: white; /* Matches the navbar background */
+        position: fixed; /* Keeps dropdown in view when scrolling */
+        top: 80px; /* Matches the navbar height */
+        width: 100%; /* Full width for mobile view */
+        z-index: 999; /* Ensure it stays above page content */
+        background-color: white; /* Matches navbar background */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
-        overflow-y: auto; /* Adds scrolling if dropdown content is long */
+        overflow-y: auto; /* Adds scrolling if content overflows */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Stack links vertically */
+        align-items: flex-start; /* Align links to the left */
+        padding-left: 1rem; /* Add padding for better appearance */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem; /* Space between links */
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
     }
 }
 
 /* Navbar Collapse (Desktop-Specific Styles) */
 @media (min-width: 769px) {
     .navbar-collapse {
-        position: static; /* Desktop menus do not need fixed positioning */
+        position: relative; /* Normal behavior for desktop */
+        display: flex !important; /* Ensures links are displayed inline */
+        justify-content: flex-end; /* Align links to the right */
         box-shadow: none; /* No shadow for desktop */
-        background-color: transparent; /* Transparent or inherit the default */
+        background-color: transparent; /* Transparent or default background */
+        width: auto; /* Use content width instead of 100% */
+    }
+
+    .navbar-nav {
+        flex-direction: row; /* Align links horizontally */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 1rem; /* Space between links */
     }
 }
 
