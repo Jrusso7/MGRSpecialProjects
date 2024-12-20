@@ -129,6 +129,24 @@ header, .navbar {
     background-color: #007BFF; /* Same underline color */
 }
 
+/* Ensure Mobile Dropdown Menu Stays Below Navbar */
+.navbar-collapse {
+    position: fixed; /* Keeps the dropdown visible during scrolling */
+    top: 80px; /* Matches the navbar height */
+    width: 100%; /* Ensures the dropdown spans the full screen width */
+    background-color: white; /* Matches the navbar background */
+    z-index: 999; /* Stays above the content but below the main navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Optional: Responsive Adjustment */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        height: auto; /* Prevents clipping of dropdown content */
+        overflow-y: auto; /* Adds scrolling if the dropdown exceeds screen height */
+    }
+}
+
 /* End of Navigation Bar CSS */
 
 /* Team Images */
