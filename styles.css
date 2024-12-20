@@ -13,23 +13,36 @@ body {
     line-height: 1.6;
 }
 
-/* Header and Navbar Styles */
+/* General Navigation Bar Styles */
 header, .navbar {
     background-color: white;
     border-bottom: 1px solid #ddd;
-    position: fixed; /* Sticks the navbar at the top */
+    position: fixed; /* Sticky navbar for all views */
     top: 0;
-    width: 100%; /* Ensures full-width coverage */
-    z-index: 1000; /* Keeps it above other content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for separation */
+    width: 100%; /* Full-width coverage */
+    z-index: 1000; /* Stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Navbar Collapse (Mobile-Specific Styles) */
 @media (max-width: 768px) {
-    .navbar {
-        height: auto; /* Adjusts height for mobile view */
+    .navbar-collapse {
+        position: fixed; /* Ensures the dropdown menu stays in place */
+        top: 80px; /* Aligns with navbar height */
+        width: 100%; /* Full width for mobile */
+        z-index: 999; /* Stays above content */
+        background-color: white; /* Matches the navbar background */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        overflow-y: auto; /* Adds scrolling if dropdown content is long */
     }
-    .navbar-nav .nav-link {
-        font-size: 1rem; /* Slightly smaller font size for links */
+}
+
+/* Navbar Collapse (Desktop-Specific Styles) */
+@media (min-width: 769px) {
+    .navbar-collapse {
+        position: static; /* Desktop menus do not need fixed positioning */
+        box-shadow: none; /* No shadow for desktop */
+        background-color: transparent; /* Transparent or inherit the default */
     }
 }
 
