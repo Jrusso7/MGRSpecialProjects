@@ -34,12 +34,12 @@ header, .navbar {
 /* Mobile View */
 @media (max-width: 768px) {
     .navbar {
-        height: 0; /* Explicitly set navbar height */
+        height: 80px; /* Explicitly set navbar height */
     }
     
     .navbar-collapse {
         position: fixed; /* Keeps dropdown in place during scroll */
-        top: 80px; /* Positions dropdown just below the navbar */
+        top: 0; /* Positions dropdown just below the navbar */
         width: 100%; /* Full width for mobile */
         z-index: 999; /* Ensures it stays above content */
         background-color: white; /* Matches navbar background */
