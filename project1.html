@@ -6,6 +6,54 @@
     <title>Project 1 | MGR Special Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style improvements for a modern look */
+        .project-container {
+            max-width: 1100px;
+        }
+        
+        .project-image {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Lightbox Styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -32,19 +80,57 @@
 </nav>
 
 <!-- Project Details Section -->
-<div class="container my-5">
+<div class="container my-5 project-container">
     <h2 class="text-center">Project 1</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <img src="images/sampleimage1.jpg" class="img-fluid rounded shadow" alt="Project 1">
-            <p class="mt-4">
-                <strong>Project Overview:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut felis nec ligula cursus tincidunt. Vivamus quis eros ac turpis laoreet volutpat.
-            </p>
-            <p><strong>Scope of Work:</strong> Detailed information about the work done in this project.</p>
-            <p><strong>Technologies Used:</strong> List any tools, technologies, or techniques used.</p>
-            <p><strong>Outcome:</strong> Summary of the project's final result and any key achievements.</p>
+
+    <!-- Image Grid -->
+    <div class="row g-4 mt-4">
+        <div class="col-md-6">
+            <a href="#lightbox1">
+                <img src="images/sampleimage1.jpg" class="img-fluid rounded shadow project-image" alt="Project Image 1">
+            </a>
         </div>
+        <div class="col-md-6">
+            <a href="#lightbox2">
+                <img src="images/sampleimage1.jpg" class="img-fluid rounded shadow project-image" alt="Project Image 2">
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="#lightbox3">
+                <img src="images/sampleimage1.jpg" class="img-fluid rounded shadow project-image" alt="Project Image 3">
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="#lightbox4">
+                <img src="images/sampleimage1.jpg" class="img-fluid rounded shadow project-image" alt="Project Image 4">
+            </a>
+        </div>
+    </div>
+
+    <!-- Lightbox Images -->
+    <div id="lightbox1" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="images/sampleimage1.jpg" alt="Expanded Image 1">
+    </div>
+    <div id="lightbox2" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="images/sampleimage1.jpg" alt="Expanded Image 2">
+    </div>
+    <div id="lightbox3" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="images/sampleimage1.jpg" alt="Expanded Image 3">
+    </div>
+    <div id="lightbox4" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="images/sampleimage1.jpg" alt="Expanded Image 4">
+    </div>
+
+    <!-- Project Details -->
+    <div class="mt-5">
+        <p><strong>Project Overview:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis nec ligula cursus tincidunt. Vivamus quis eros ac turpis laoreet volutpat.</p>
+        <p><strong>Scope of Work:</strong> Detailed information about the work done in this project.</p>
+        <p><strong>Technologies Used:</strong> List any tools, technologies, or techniques used.</p>
+        <p><strong>Outcome:</strong> Summary of the project's final result and any key achievements.</p>
     </div>
 </div>
 
