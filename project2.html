@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project [Number] | MGR Special Projects</title>
+    <title>Project 2 | MGR Special Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Project Container */
+        .project-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80vh;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Navigation */
+        .lightbox .prev, .lightbox .next {
+            position: absolute;
+            top: 50%;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            transform: translateY(-50%);
+            padding: 10px;
+            user-select: none;
+        }
+
+        .lightbox .prev { left: 5%; }
+        .lightbox .next { right: 5%; }
+        .lightbox .close-btn { position: absolute; top: 15px; right: 25px; font-size: 35px; color: white; cursor: pointer; }
+
+        /* Thumbnail Navigation */
+        .thumbnail-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .thumbnail {
+            width: 80px;
+            height: 60px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: 0.3s;
+        }
+
+        .thumbnail:hover {
+            border: 2px solid #007bff;
+        }
+
+        /* Tabs Styling */
+        .nav-tabs {
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .tab-content {
+            padding: 15px;
+            text-align: left;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .thumbnail { width: 60px; height: 45px; }
+        }
+    </style>
 </head>
 <body>
 
@@ -32,31 +112,40 @@
 </nav>
 
 <!-- Project Details Section -->
-<div class="container my-5">
-    <h2 class="text-center">Project [Number]</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <img src="images/sampleimage2.jpg" class="img-fluid rounded shadow" alt="Project 2">
-            <p class="mt-4">
-                <strong>Project Overview:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Sed ut felis nec ligula cursus tincidunt. Vivamus quis eros ac turpis laoreet volutpat.
-            </p>
-            <p><strong>Scope of Work:</strong> Detailed information about the work done in this project.</p>
-            <p><strong>Technologies Used:</strong> List any tools, technologies, or techniques used.</p>
-            <p><strong>Outcome:</strong> Summary of the project's final result and any key achievements.</p>
+<div class="container my-5 project-container">
+    <h2 class="text-center">Project 2</h2>
+
+    <!-- Image Carousel -->
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"><img src="images/sampleimage1.jpg" class="d-block w-100 rounded" alt="Project Image 1"></div>
+            <div class="carousel-item"><img src="images/sampleimage2.jpg" class="d-block w-100 rounded" alt="Project Image 2"></div>
+            <div class="carousel-item"><img src="images/sampleimage3.jpg" class="d-block w-100 rounded" alt="Project Image 3"></div>
+            <div class="carousel-item"><img src="images/sampleimage4.jpg" class="d-block w-100 rounded" alt="Project Image 4"></div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Bootstrap Tabs -->
+    <ul class="nav nav-tabs mt-4">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#overview">Overview</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#scope">Scope</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tech">Technologies</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#outcome">Outcome</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="overview" class="tab-pane fade show active"><p><strong>Project Overview:</strong> Detailed summary of work.</p></div>
+        <div id="scope" class="tab-pane fade"><p><strong>Scope of Work:</strong> What was done.</p></div>
+        <div id="tech" class="tab-pane fade"><p><strong>Technologies Used:</strong> Tools & techniques.</p></div>
+        <div id="outcome" class="tab-pane fade"><p><strong>Outcome:</strong> Final results.</p></div>
     </div>
 </div>
-
-<!-- Back to Gallery Button -->
-<div class="text-center my-4">
-    <a href="gallery.html" class="btn btn-primary">Back to Gallery</a>
-</div>
-
-<!-- Footer -->
-<footer class="bg-light text-center py-3">
-    <p>&copy; 2024 MGR Special Projects. All rights reserved.</p>
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
