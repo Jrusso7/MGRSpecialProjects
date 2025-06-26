@@ -237,20 +237,6 @@ p.text-muted {
     z-index: 2;
 }
 
-.hero-content h1 {
-    font-size: 4rem; /* Larger title */
-    font-weight: bold; /* Bold for emphasis */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.8rem; /* Larger tagline */
-    font-weight: 300; /* Light font for contrast with the title */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Similar shadow for consistency */
-    margin-top: 0.5rem;
-}
-
 .hero-button {
     display: inline-block;
     margin-top: 1.5rem;
