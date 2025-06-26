@@ -59,7 +59,7 @@ header, .navbar {
     .navbar-toggler {
         position: absolute;
         right: 1rem;
-        top: 1.5rem;
+        top: 1.35rem;
         z-index: 1002; /* stays on top 
 
 /*         position: relative;
