@@ -97,6 +97,7 @@ header, .navbar {
     /* HERO SECTION */
     .hero-content h1 {
         font-size: 2rem;
+        background-color: red !important;
     }
 
     .hero-content p.h5 {
