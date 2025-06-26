@@ -31,93 +31,6 @@ header, .navbar {
     transition: all 0.3s ease; /* Smooth transitions if any */
 }
 
-/* Mobile View */
-
-@media (max-width: 768px) {
-
-    /* NAVBAR CLEANUP */
-    .navbar {
-        height: auto;
-        padding: 0.75rem 1rem;
-        flex-wrap: wrap; 
-/*         flex-direction: column;
-        align-items: center; */
-    }
-
-    .navbar-brand {
-        width: 100%;
-        justify-content: flex-start;
-        margin-bottom: 0.5rem;
-        z-index: 1001; /* ensures it's above dropdown
-        
-/*         width: 100%;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 0.25rem; */
-    }
-
-    .navbar-toggler {
-        position: absolute;
-        right: 1rem;
-        top: 1.35rem;
-        z-index: 1002; /* stays on top 
-
-/*         position: relative;
-        align-self: flex-end;
-        margin-top: -2.5rem; 
-        margin-right: 0.5rem;
-        z-index: 1002; */
-    }
-
-    .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        z-index: 1000;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 0.5rem;
-    }
-
-    .company-name {
-        font-size: 1.2rem;
-    }
-
-
-    /* HERO SECTION */
-    .hero-content h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-content p.h5 {
-        font-size: 1.2rem;
-    }
-
-    .hero-content .lead {
-        font-size: 1.2rem;
-    }
-
-    .hero-content a.btn {
-        font-size: 1rem;
-        padding: 0.5rem 1.5rem;
-    }
-
-    .hero-content {
-        padding: 2rem 1rem;
-    }
-}
-
-
 /* All Navigation Bar CSS */
 
 .navbar-brand {
@@ -319,6 +232,92 @@ p.text-muted {
 }
 
 /* Team Page End */
+
+/* Mobile View */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR CLEANUP */
+    .navbar {
+        height: auto;
+        padding: 0.75rem 1rem;
+        flex-wrap: wrap; 
+/*         flex-direction: column;
+        align-items: center; */
+    }
+
+    .navbar-brand {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 0.5rem;
+        z-index: 1001; /* ensures it's above dropdown
+        
+/*         width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 0.25rem; */
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1rem;
+        top: 1.35rem;
+        z-index: 1002; /* stays on top 
+
+/*         position: relative;
+        align-self: flex-end;
+        margin-top: -2.5rem; 
+        margin-right: 0.5rem;
+        z-index: 1002; */
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .company-name {
+        font-size: 1.2rem;
+    }
+
+
+    /* HERO SECTION */
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p.h5 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1.2rem;
+    }
+
+    .hero-content a.btn {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+}
 
 /* Footer */
 footer {
