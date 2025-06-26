@@ -39,34 +39,34 @@ header, .navbar {
     .navbar {
         height: auto;
         padding: 0.75rem 1rem;
-/*         flex-wrap: wrap; */
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap; 
+/*         flex-direction: column;
+        align-items: center; */
     }
 
     .navbar-brand {
-/*         width: 100%;
-        justify-content: center;
-        margin-bottom: 0.5rem;
-        z-index: 1001; /* ensures it's above dropdown */
-        
         width: 100%;
         justify-content: center;
+        margin-bottom: 0.5rem;
+        z-index: 1001; /* ensures it's above dropdown
+        
+/*         width: 100%;
+        justify-content: center;
         text-align: center;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.25rem; */
     }
 
     .navbar-toggler {
-/*         position: absolute;
+        position: absolute;
         right: 1rem;
         top: 1rem;
-        z-index: 1002; /* stays on top */ 
+        z-index: 1002; /* stays on top 
 
-        position: relative;
+/*         position: relative;
         align-self: flex-end;
-        margin-top: -2.5rem; /* Pull it up to top-right */
+        margin-top: -2.5rem; 
         margin-right: 0.5rem;
-        z-index: 1002;
+        z-index: 1002; */
     }
 
     .navbar-collapse {
