@@ -266,6 +266,21 @@ p.text-muted {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
+/* Team Page Start */
+.card-img-top.rounded-circle {
+    border: 4px solid #f0f0f0;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Team Page End */
+
 /* Footer */
 footer {
     text-align: center;
