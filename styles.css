@@ -322,7 +322,7 @@ p.text-muted {
 /* For specific page hero altering  */
 .page-hero {
     height: 40vh;
-    background: url('images/construction_banner.jpg') center/cover no-repeat;
+    background: url('images/country-quilt.webp') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
