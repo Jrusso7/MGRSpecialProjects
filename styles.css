@@ -9,7 +9,7 @@
   border: 3px solid white; /* adjust thickness as desired */
   border-radius: 8px; /* adjust for square or rounded look */
   background-color: white; /* optional: if your logo has transparent areas */
-  transform: translateY(10px); /* dips the logo down below navbar */
+  transform: translateY(30px); /* dips the logo down below navbar */
 }
 
 
@@ -70,7 +70,7 @@ header, .navbar {
 /* Logo Styling */
 .navbar-brand img {
     height: auto; /* Automatically adjust height based on width for responsiveness */
-    max-height: 50px; /* Matches the explicit height from the HTML */
+    max-height: 100px; /* Matches the explicit height from the HTML */
     margin-right: 10px; /* Adds space between the logo and the company name */
     vertical-align: middle; /* Ensures alignment with the text */
 }
