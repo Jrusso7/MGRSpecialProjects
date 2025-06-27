@@ -13,6 +13,19 @@ body {
     line-height: 1.6;
 }
 
+.font-dm-serif {
+  font-family: 'DM Serif Text', serif;
+}
+
+.font-tinos {
+  font-family: 'Tinos', serif;
+}
+
+.font-roboto-flex {
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+
 /* General Navigation Bar Styles */
 header, .navbar {
     margin: 0; /*Added to fix space above navbar*/
