@@ -321,8 +321,9 @@ p.text-muted {
 
 /* For specific page hero altering  */
 .page-hero {
-    height: 40vh;
-    background: url('images/country-quilt.webp') center/cover no-repeat;
+    height: 30vh;
+/*     background: url('images/country-quilt.webp') center/cover no-repeat; */
+    background: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
