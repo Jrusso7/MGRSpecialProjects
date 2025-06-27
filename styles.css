@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+.logo-img {
+  border: 3px solid white; /* adjust thickness as desired */
+  border-radius: 8px; /* adjust for square or rounded look */
+  background-color: white; /* optional: if your logo has transparent areas */
+  transform: translateY(10px); /* dips the logo down below navbar */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     padding-top: 0; /* Matches the height of the navbar */
