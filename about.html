@@ -8,11 +8,45 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
   />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Tinos&family=Roboto+Flex&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="styles.css" />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
+  <style>
+    /* Enhancements for readability and luxury styling */
+    .about-section {
+      background-color: #f8f9fa;
+      padding: 4rem 0;
+    }
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    .about-text h2 {
+      font-family: 'DM Serif Text', serif;
+      font-size: 2rem;
+      border-bottom: 3px solid #007BFF;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+    blockquote {
+      border-left: 4px solid #007BFF;
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    .bi {
+      font-size: 2.5rem;
+    }
+    .icon-title {
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -70,52 +104,56 @@
   </div>
 
   <!-- About Section -->
-  <div class="container my-5" style="max-width: 900px;">
-    <h2 class="text-center mb-3">Who We Are</h2>
-    <hr
-      class="mx-auto"
-      style="width: 60px; border: 2px solid #007BFF;"
-    />
+  <section class="about-section">
+    <div class="container about-text" style="max-width: 900px;">
+      <h2 class="text-center mb-3">Who We Are</h2>
+      <div class="text-center mb-4">
+        <hr
+          class="mx-auto"
+          style="width: 60px; border: 2px solid #007BFF;"
+        />
+      </div>
 
-    <p class="mt-4">
-      At MGR Special Projects, we bring relentless work ethic and refined craftsmanship to every luxury home we build or renovate.
-    </p>
-    <p>
-      Founded by a general contractor who grew up just outside of Boston, our company is grounded in the no-nonsense, roll-up-your-sleeves attitude of the Northeast — paired with an unwavering commitment to detail, quality, and client satisfaction.
-    </p>
-    <p>
-      We specialize in high-end residential construction, offering full-service project management, custom builds, and upscale renovations tailored to each client's vision.
-    </p>
-    <p>
-      From concept to completion, we deliver homes that blend timeless design with precise execution — because we believe your space should reflect both your lifestyle and our pride in work well done.
-    </p>
-    <p>
-      Our homes stand the test of time—both structurally and in the memories they help create. Our passion and love for what we do is shown in each home we build or renovate - it drives every detail, ensuring each project is delivered with uncompromising quality, clear communication, and hands-on dedication.
-    </p>
-    <p>
-      Experience the difference of luxury built by a company that stands on its values, truly cares about each client, and takes pride in a job well done. At MGR Special Projects, each project is truly special to us and each client is given a unique, enjoyable experience that seems to have been lost in today’s construction world.
-    </p>
+      <p>
+        At MGR Special Projects, we bring relentless work ethic and refined craftsmanship to every luxury home we build or renovate.
+      </p>
+      <p>
+        Founded by a general contractor who grew up just outside of Boston, our company is grounded in the no-nonsense, roll-up-your-sleeves attitude of the Northeast — paired with an unwavering commitment to detail, quality, and client satisfaction.
+      </p>
+      <p>
+        We specialize in high-end residential construction, offering full-service project management, custom builds, and upscale renovations tailored to each client's vision.
+      </p>
+      <p>
+        From concept to completion, we deliver homes that blend timeless design with precise execution — because we believe your space should reflect both your lifestyle and our pride in work well done.
+      </p>
+      <p>
+        Our homes stand the test of time—both structurally and in the memories they help create. Our passion and love for what we do is shown in each home we build or renovate - it drives every detail, ensuring each project is delivered with uncompromising quality, clear communication, and hands-on dedication.
+      </p>
+      <p>
+        Experience the difference of luxury built by a company that stands on its values, truly cares about each client, and takes pride in a job well done. At MGR Special Projects, each project is truly special to us and each client is given a unique, enjoyable experience that seems to have been lost in today’s construction world.
+      </p>
 
-    <!-- Highlighted Quote -->
-    <blockquote class="blockquote my-4 text-center">
-      <p class="mb-0 fst-italic">"Luxury homes built with pride and purpose."</p>
-    </blockquote>
-  </div>
+      <!-- Highlighted Quote -->
+      <blockquote class="blockquote my-4">
+        <p class="mb-0">"Luxury homes built with pride and purpose."</p>
+      </blockquote>
+    </div>
+  </section>
 
   <!-- Icons Row -->
   <div class="container my-5">
     <div class="row text-center">
       <div class="col-md-4 mb-3">
-        <i class="bi bi-house-door" style="font-size: 2rem; color: #007BFF;"></i>
-        <p class="mt-2">Custom Home Builds</p>
+        <i class="bi bi-house-door" style="color: #007BFF;"></i>
+        <p class="mt-2 icon-title">Custom Home Builds</p>
       </div>
       <div class="col-md-4 mb-3">
-        <i class="bi bi-hammer" style="font-size: 2rem; color: #007BFF;"></i>
-        <p class="mt-2">Luxury Renovations</p>
+        <i class="bi bi-hammer" style="color: #007BFF;"></i>
+        <p class="mt-2 icon-title">Luxury Renovations</p>
       </div>
       <div class="col-md-4 mb-3">
-        <i class="bi bi-person-check" style="font-size: 2rem; color: #007BFF;"></i>
-        <p class="mt-2">Client-First Approach</p>
+        <i class="bi bi-person-check" style="color: #007BFF;"></i>
+        <p class="mt-2 icon-title">Client-First Approach</p>
       </div>
     </div>
   </div>
