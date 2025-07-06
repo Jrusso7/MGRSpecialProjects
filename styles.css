@@ -63,7 +63,7 @@ header, .navbar {
 .company-name {
     font-size: 1.5rem; /* Adjust font size to fit well with the logo */
     font-weight: bold;
-    color: #333; /* Match the navigation bar text color */
+    color: #FFFFFF; /* Match the navigation bar text color */
     white-space: nowrap; /* Prevent wrapping of the text */
 }
 
