@@ -9,7 +9,7 @@
   border: 3px solid white; /* adjust thickness as desired */
   border-radius: 8px; /* adjust for square or rounded look */
   background-color: white; /* optional: if your logo has transparent areas */
-  transform: translateY(30px); /* dips the logo down below navbar */
+/*   transform: translateY(30px); /* dips the logo down below navbar */ */
 }
 
 
