@@ -35,10 +35,28 @@ body {
 
 
 /* General Navigation Bar Styles */
+
+.navbar {
+  background-color: black !important; /* ensures black bg overrides any Bootstrap defaults */
+}
+
+.navbar .nav-link {
+  color: white !important; /* navbar links white by default */
+}
+
+.navbar .nav-link:hover {
+  color: #ddd !important; /* hover color consistent with home page inline style */
+}
+
+.company-name {
+  color: white !important; /* ensures the company name stays white as well */
+}
+
+
 header, .navbar {
     margin: 0; /*Added to fix space above navbar*/
     padding: 0; /*Added to fix space above navbar*/
-    background-color: white;
+/*     background-color: white; */
     border-bottom: 1px solid #ddd;
     position: sticky; /* Ensures it sticks during scroll */
     top: 0;
