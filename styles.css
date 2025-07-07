@@ -299,8 +299,8 @@ p.text-muted {
 
     .navbar-toggler {
         position: absolute;
-        right: 1rem;
-        top: 1.35rem;
+        right: 0.5rem;
+        top: 2.9rem;
         z-index: 1002; /* stays on top 
 
 /*         position: relative;
