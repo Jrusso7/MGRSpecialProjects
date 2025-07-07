@@ -312,6 +312,10 @@ p.text-muted {
         margin-bottom: 0.5rem;
     }
 
+    .navbar-nav .nav-link {
+    color: black !important; /* Override white with black on mobile */
+}
+
     .company-name {
         font-size: 1.2rem;
     }
